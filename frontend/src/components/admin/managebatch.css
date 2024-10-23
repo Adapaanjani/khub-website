@@ -1,0 +1,167 @@
+/* Overall container styling */
+.managebatch-div {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-height: 80vh; /* Adjust the max-height as needed */
+    overflow-y: auto; /* Add scrollbars when content overflows */
+}
+  
+  /* Title styling */
+  .managebatch-h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Select batch dropdown */
+  .managebatch-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border: 2px solid #007bff;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .managebatch-select:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 4px rgba(0, 0, 255, 0.2);
+  }
+  
+  /* Button styling */
+  .managebatch-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .managebatch-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Team buttons */
+  .managebatch-button.team {
+    background-color: #28a745;
+  }
+  
+  .managebatch-button.team:hover {
+    background-color: #1e7e34;
+  }
+  
+  /* Delete buttons */
+  .managebatch-button.delete {
+    background-color: #dc3545;
+  }
+  
+  .managebatch-button.delete:hover {
+    background-color: #c82333;
+  }
+  
+  /* Team details section */
+  .managebatch-div > div {
+    margin-bottom: 20px;
+  }
+  
+  .managebatch-h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .managebatch-h3 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 100px;
+  }
+  
+  /* Table styling */
+  .managebatch-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .managebatch-thead {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .managebatch-th, .managebatch-td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .managebatch-th {
+    font-size: 1.1rem;
+  }
+  
+  .managebatch-td {
+    font-size: 0.9rem;
+  }
+  
+  /* Edit form inputs */
+  .managebatch-input[type="text"], .managebatch-input[type="file"] {
+    padding: 8px;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .managebatch-input[type="file"] {
+    padding: 0;
+  }
+  
+  /* Image preview */
+  .managebatch-img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 8px;
+  }
+  
+  /* Actions */
+  .managebatch-button.save {
+    background-color: #28a745;
+  }
+  
+  .managebatch-button.save:hover {
+    background-color: #1e7e34;
+  }
+  
+  .managebatch-button.cancel {
+    background-color: #6c757d;
+  }
+  
+  .managebatch-button.cancel:hover {
+    background-color: #5a6268;
+  }
+  
+  /* Error and confirm messages */
+  .managebatch-p.error, .managebatch-p.confirm {
+    font-size: 1rem;
+    color: #dc3545;
+    margin: 10px 0;
+  }
+  
+  .managebatch-p.confirm {
+    color: #28a745;
+  }
+  

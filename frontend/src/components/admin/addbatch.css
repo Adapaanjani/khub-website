@@ -1,0 +1,109 @@
+/* Ensure the page takes the full height */
+html, body {
+  height: 100% !important;
+  margin: 0 !important;
+  font-family: Arial, sans-serif !important;
+}
+
+/* Center the container */
+.addbatch-page {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100% !important;
+
+}
+.addbatch-container {
+  padding: 90px 50px !important; /* Reduced padding values */
+
+  border-radius: 8px !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+  max-width: 600px !important;
+  width: 100% !important;
+  margin-top: 20px !important;
+}
+
+.addbatch-form {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 20px !important;
+}
+
+.addbatch-label {
+  font-weight: bold !important;
+  margin-bottom: 10px !important;
+}
+
+.addbatch-input {
+  width: 100% !important;
+  padding: 10px !important;
+  margin-top: 5px !important;
+  border: 1px solid #ced4da !important;
+  border-radius: 4px !important;
+}
+
+.addbatch-select {
+  width: 100% !important;
+  padding: 10px !important;
+  margin-top: 5px !important;
+  border: 1px solid #ced4da !important;
+  border-radius: 4px !important;
+  background-color: white !important;
+}
+
+.addbatch-button {
+  padding: 10px 20px !important;
+  margin-top: 10px !important;
+  background-color: #007bff !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s !important;
+}
+
+.addbatch-button:hover {
+  background-color: #0056b3 !important;
+}
+
+.addbatch-team-form {
+  margin-top: 20px !important;
+  padding: 20px !important;
+  background-color: #e9ecef !important;
+  border-radius: 8px !important;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) !important;
+}
+
+.addbatch-team-form h3,
+.addbatch-team-form h4 {
+  margin-bottom: 10px !important;
+}
+
+.addbatch-member-form {
+  margin-top: 10px !important;
+  padding: 15px !important;
+  background-color: #f1f3f5 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1) !important;
+}
+
+.addbatch-existing-batches {
+  margin-top: 30px !important;
+}
+
+.addbatch-existing-batches h3 {
+  margin-bottom: 10px !important;
+}
+
+.addbatch-existing-batches ul {
+  list-style-type: none !important;
+  padding: 0 !important;
+}
+
+.addbatch-existing-batches li {
+  padding: 10px !important;
+  background-color: #ffffff !important;
+  border: 1px solid #ced4da !important;
+  border-radius: 4px !important;
+  margin-bottom: 5px !important;
+}

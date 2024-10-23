@@ -1,0 +1,97 @@
+.support {
+  background-color: #e2e4e8; /* Example background color */
+  color: #333; /* Example text color */
+  width: 100%;
+}
+.cards-heading {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2em;
+  color: #121212;
+  position: relative;
+}
+
+.cards-heading::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: #3b82f6;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  /* Add some space between cards */
+}
+
+.card {
+  flex: 1 0 calc(33.333% - 20px); /* Three cards per row with gap */
+  max-width: calc(33.333% - 20px); /* Ensure max width is one-third minus the gap */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f5f5;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+  color: black; /* Initial text color */
+  height: 250px; /* Adjust the height as needed */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #053c77; /* Background color on hover */
+  color: white; /* Text color on hover */
+}
+
+.card-image {
+  width: 80%;
+  max-width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-top: 16px;
+  border-radius: 50%; /* Oval shape */
+}
+
+.card-content {
+  padding: 8px; /* Reduce padding */
+}
+
+.card-content h3 {
+  color: black; /* Initial name text color */
+  transition: color 0.3s;
+  font-size: 1.2em; /* Adjust font size */
+  margin: 8px 0; /* Adjust margin */
+}
+
+.card-content p {
+  font-size: 0.9em; /* Adjust font size */
+  margin: 4px 0; /* Adjust margin */
+}
+
+.card:hover .card-content h3 {
+  color: white; /* Name text color on hover */
+}
+
+@media (max-width: 1024px) {
+  .card {
+    flex: 1 0 calc(45% - 20px); /* Two cards per row on medium screens */
+    max-width: calc(45% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 0 calc(90% - 20px); /* One card per row on small screens */
+    max-width: calc(90% - 20px);
+  }
+}

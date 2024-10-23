@@ -1,0 +1,85 @@
+.add-member-container {
+    padding: 70px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.add-member-container h2,
+.add-member-container h3,
+.add-member-container h4,
+.add-member-container h5,
+.add-member-container h6 {
+    text-align: center;
+    color: #333;
+}
+
+.add-member-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.add-member-container form input[type="text"],
+.add-member-container form input[type="file"],
+.add-member-container form select,
+.add-member-container form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.add-member-container form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-member-container form button:hover {
+    background-color: #45a049;
+}
+
+.add-member-container .member-details {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.add-member-container .member-details p {
+    margin: 5px 0;
+}
+
+.add-member-container .member-details img {
+    max-width: 100px;
+    display: block;
+    margin: 10px auto;
+}
+
+.team-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.member-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between; /* Adjusted for better spacing */
+}
+
+.member-card {
+    flex: 1 1 calc(25% - 20px); /* 4 cards per row with spacing */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.member-card img {
+    max-width: 100px;
+    display: block;
+    margin: 10px auto;
+}

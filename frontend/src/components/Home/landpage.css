@@ -1,0 +1,107 @@
+/* Landing Page */
+.landing-container {
+  width: 100%;
+  height: 200vh; /* Double the height to enable scrolling */
+}
+
+.landing-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: left;
+  overflow: hidden; /* Ensure the blur doesn't create unwanted scrollbars */
+  background: url('we.jpg') no-repeat center center/cover; /* Adjust path to the image */
+}
+
+.landing-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: blur(5px); /* Adjust the blur intensity as needed */
+  z-index: 1;
+}
+
+.left-container,
+.right-container {
+  position: relative;
+  z-index: 2; /* Ensure content is above the blurred background */
+  width: 50%; /* Divide the page into two equal parts */
+  padding: 20px;
+}
+
+.left-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.right-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo {
+  width: 20vw; /* Default size as 20% of viewport width */
+  max-width: 300px; /* Maximum width to prevent it from becoming too large */
+  min-width: 100px; /* Minimum width to prevent it from becoming too small */
+  animation: float 2s infinite; /* Animation */
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.content h1 {
+  color: white; /* Set text color to white */
+  font-weight: bold; /* Set text to bold */
+  font-family: 'YourFontName', sans-serif; /* Change font style */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .logo {
+    width: 25vw; /* Adjust size for tablets */
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-page {
+    flex-direction: column; /* Stack content and logo vertically on smaller screens */
+    align-items: center; /* Center align items */
+  }
+
+  .left-container,
+  .right-container {
+    width: 100%; /* Make containers full width */
+    text-align: center;
+    padding: 10px;
+  }
+
+  .logo {
+    display: none; /* Hide logo on mobile screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .left-container {
+    font-size: 0.8rem; /* Adjust font size for smaller screens */
+  }
+}

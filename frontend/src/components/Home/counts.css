@@ -1,0 +1,28 @@
+.counts-container {
+  display: flex;
+  justify-content: space-around; /* Horizontal layout for desktop */
+  width: 100%; /* Full width container */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+   /* Strong blur effect */
+}
+
+.count-card {
+  text-align: center;
+  padding: 20px;
+  background-color: transparent; /* Fully transparent background */
+  border-radius: 8px;
+  margin: 10px;
+  flex: 1; /* Each card takes equal space */
+}
+
+.count-card h2 {
+  color: white; /* Set text color to white */
+  font-weight: bold; /* Make text bold */
+}
+
+@media (max-width: 768px) {
+  .counts-container {
+    flex-direction: column; /* Vertical layout for mobile */
+    align-items: center;
+  }
+}

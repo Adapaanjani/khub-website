@@ -1,0 +1,107 @@
+/* manageprojects.css */
+
+.manage-projects {
+    padding: 20px; /* Adjusted padding to a more reasonable value */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .manage-projects h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+  }
+  
+  .filter-group label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .filter-group select {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .projects h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .projects table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .projects th, .projects td {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .projects th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .projects input[type="text"],
+  .projects input[type="url"],
+  .projects textarea {
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+  }
+  
+  .projects textarea {
+    height: 100px;
+  }
+  
+  .projects button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .projects button:hover {
+    background-color: #0056b3;
+  }
+  
+  .projects a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .projects a:hover {
+    text-decoration: underline;
+  }
+  
+  .projects .preview-image {
+    cursor: pointer;
+  }
+  
+  .projects .preview-image img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .projects .preview-image button {
+    background-color: #28a745;
+  }
+  
+  .projects .preview-image button:hover {
+    background-color: #218838;
+  }
+  

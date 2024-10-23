@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(216, 20%, 95%);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 60%;
+    margin: 6rem auto;
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+h1 {
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    margin-bottom: 2.5rem;
+}
+
+h3 {
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+.form-section {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    margin-bottom: 2.5rem;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #682121;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input[type="file"] {
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button[type="button"] {
+    background-color: #28a745;
+}
+
+button[type="button"]:hover {
+    background-color: #218838;
+}
+
+button[type="submit"] {
+    background-color: #007BFF;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.team-member {
+    background: #eef2f7;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #d0d4d9;
+    border-radius: 6px;
+}
+
+.team-member h4 {
+    margin-bottom: 0.8rem;
+}
+
+.team-member button {
+    background-color: #dc3545;
+}
+
+.team-member button:hover {
+    background-color: #c82333;
+}

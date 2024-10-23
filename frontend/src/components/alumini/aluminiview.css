@@ -1,0 +1,99 @@
+.heading {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2em;
+  color: #121212;
+  position: relative;
+}
+
+.heading::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: #3b82f6;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.alumniv-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Grid Styles */
+.alumniv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Adjusted minmax for better responsiveness */
+  gap: 20px;
+}
+
+/* Card Styles */
+.alumni-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(to bottom, #e0f7fa, #ffffff);/* Gradient background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.alumni-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styles */
+.alumniv-image {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10%;
+  margin-bottom: 10px;
+}
+
+/* Heading Styles */
+.alumni-card h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  color: #0b0b0b;
+}
+
+/* Paragraph Styles */
+.alumni-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Icon Styles */
+.alumniv-icons a {
+  margin: 0 10px;
+  color: #555;
+}
+
+.alumniv-icons a:hover {
+  color: #000;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+  .alumniv-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .alumniv-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .alumniv-grid {
+    grid-template-columns: 1fr; /* Single column layout for small screens */
+  }
+}

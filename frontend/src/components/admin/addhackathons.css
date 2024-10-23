@@ -1,0 +1,168 @@
+/* Base styles */
+.hackathon-form {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+}
+
+.hackathon-form h3 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.hackathon-form .form-group {
+  margin-bottom: 15px;
+}
+
+.hackathon-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #3498db;
+}
+
+.hackathon-form input,
+.hackathon-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.hackathon-form input[type="file"] {
+  padding: 0;
+}
+
+.hackathon-form textarea {
+  resize: vertical;
+}
+
+.hackathon-form .form-group input[type="text"],
+.hackathon-form .form-group input[type="date"],
+.hackathon-form .form-group input[type="url"] {
+  background: #fff;
+}
+
+.hackathon-form .form-group textarea {
+  background: #fff;
+}
+
+.hackathon-form .form-group .member-group {
+  display: flex;
+  align-items: center;
+}
+
+.hackathon-form .form-group .member-group input {
+  flex: 1;
+}
+
+.hackathon-form .form-group .member-group .remove-member {
+  background: #131313;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hackathon-form .form-group .member-group .remove-member:hover {
+  background: #000000;
+}
+
+.hackathon-form .form-group .add-member,
+.hackathon-form .form-group .add-team,
+.hackathon-form .form-group .remove-team,
+.hackathon-form .form-group .submit-button {
+  background: #0e0e0e;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hackathon-form .form-group .add-member:hover,
+.hackathon-form .form-group .add-team:hover,
+.hackathon-form .form-group .remove-team:hover,
+.hackathon-form .form-group .submit-button:hover {
+  background: #0d0d0d;
+}
+
+.hackathon-form .form-group .add-member {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+.hackathon-form .form-group .add-member:hover {
+  background: #111 !important;
+}
+
+.hackathon-form .form-group .remove-team {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+.hackathon-form .form-group .remove-team:hover {
+  background: #333 !important;
+}
+
+.hackathon-form .form-group .submit-button {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+.hackathon-form .form-group .submit-button:hover {
+  background: #333 !important;
+}
+
+.hackathon-form .team-group {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background: #ecf0f1;
+}
+
+.hackathon-form .team-group h4 {
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+}
+
+.hackathon-form .team-group .form-group {
+  margin-bottom: 10px;
+}
+
+.hackathon-form .team-group .remove-team {
+  background: #000 !important;
+  color: #fff !important;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.hackathon-form .team-group .remove-team:hover {
+  background: #333 !important;
+}
+
+.hackathon-form .team-group .add-member {
+  background: #000 !important;
+  color: #fff !important;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hackathon-form .team-group .add-member:hover {
+  background: #111 !important;
+}

@@ -1,0 +1,66 @@
+.heading {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2em;
+  color: #121212;
+  position: relative;
+}
+
+.heading::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: #3b82f6;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.custom-batch-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Grid Styles */
+.custom-batch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Card Styles */
+.custom-batch-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(to bottom, #f2f9ff, #d6e8f7); /* Gradient background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.custom-batch-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styles */
+.custom-batch-card h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  color: #0b3d91;
+}
+
+/* Paragraph Styles */
+.custom-batch-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Link Styles */
+.custom-batch-link {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,19 @@
+.home {
+  background-image: url('we.jpg'); /* Replace with your image path */
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the background image */
+  background-attachment: fixed; /* Fixed background */
+  background-color: rgba(0, 0, 0, 0.5); /* Optional overlay to enhance readability */
+  color: white; /* Text color */
+  min-height: 100vh; /* Full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0px;
+  box-sizing: border-box; /* Ensure padding is included in height calculations */
+  backdrop-filter: blur(10px); /* Blur effect for the background */
+}
+
+/* Heading Styles */

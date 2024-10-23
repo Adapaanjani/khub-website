@@ -1,0 +1,207 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #053c77;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    height: 70px;
+}
+
+/* Navbar Brand Styles */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+/* Logo Styles */
+.navbar-logo {
+    height: 70px;
+    width: auto;
+}
+
+
+/* Navbar Menu Styles */
+.navbar-menu {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+
+/* Navbar Menu Link Styles */
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar Menu Link Hover Effect */
+.navbar-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar Menu Icon Styles */
+.navbar-menu a .nav-icon {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+/* Toggle Bar Styles */
+#checkbox {
+    display: none;
+}
+
+/* Toggle Button Styles */
+.toggle {
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition-duration: .3s;
+}
+
+/* Toggle Bars */
+.bars {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(253, 255, 243);
+    border-radius: 5px;
+    transition-duration: .3s;
+}
+
+/* Toggle Bar Animations for Open State */
+#checkbox:checked + .toggle #bar2 {
+    transform: translateY(11px) rotate(60deg);
+    margin-left: 0;
+    transform-origin: right;
+    transition-duration: .3s;
+    z-index: 2;
+}
+
+#checkbox:checked + .toggle #bar1 {
+    transform: translateY(19px) rotate(-60deg);
+    transition-duration: .3s;
+    transform-origin: left;
+    z-index: 1;
+}
+
+#checkbox:checked + .toggle {
+    transform: rotate(-90deg);
+}
+
+/* Mobile and Tablet View */
+
+
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Link */
+.dropdown > a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #053c77;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    flex-direction: column;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+@media (min-width: 1024px) {
+    .navbar-logo {
+        height: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-logo {
+        height: 50px;
+    }
+}
+
+/* Mobile and Tablet View */
+@media (max-width: 1020px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        height: 100vh; /* Full height */
+        background-color: #053c77;
+        position: fixed; /* Fixed position for overlay */
+        top: 70px; /* Below the navbar */
+        right: 0;
+        margin-right: 0;
+        padding: 20px;
+        z-index: 999; /* Ensure it's on top */
+    }
+
+    .navbar-menu.open {
+        display: flex; /* Show when open */
+    }
+
+    .toggle {
+        display: flex; /* Show toggle button on mobile */
+    }
+}
+
+@media (min-width: 1020px) {
+    .toggle {
+        display: none; /* Hide toggle button on larger screens */
+    }
+}
+
+/* Show Dropdown on Mobile */
+@media (max-width: 1020px) {
+    .dropdown:hover .dropdown-content {
+        display: none; /* Prevent hover from showing dropdown on mobile */
+    }
+    .dropdown-content {
+        display: flex; /* Show dropdown content when clicked */
+        flex-direction: column;
+    }
+}
+

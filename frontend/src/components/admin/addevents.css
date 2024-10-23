@@ -1,0 +1,102 @@
+/* Container styling */
+.addevents-container {
+    max-width: 1000px;
+    margin: 90px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+}
+
+/* Heading styling */
+.addevents-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+.addevents-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input field styling */
+.addevents-input[type="text"],
+.addevents-textarea,
+.addevents-input[type="file"] {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Textarea specific styling */
+.addevents-textarea {
+    resize: vertical;
+    min-height: 00px;
+}
+
+/* File input styling */
+.addevents-input[type="file"] {
+    border: none;
+    padding: 0;
+}
+
+/* Button styling */
+.addevents-button {
+    /* padding: 10px 60px; */
+    width:150px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.addevents-button:hover {
+    background-color: #0056b3;
+}
+
+/* SubEvent container styling */
+.addevents-sub-event-container {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+/* SubEvent heading styling */
+.addevents-sub-event-container h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+/* SubEvent image container styling */
+.addevents-sub-event-image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Image input container styling */
+.addevents-image-input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Remove image button styling */
+.addevents-sub-event-image-container button {
+    background-color: #dc3545;
+}
+
+/* Remove image button hover effect */
+.addevents-sub-event-image-container button:hover {
+    background-color: #c82333;
+}

@@ -1,0 +1,92 @@
+.batch-view-container {
+  padding: 50px; /* Adjusted for a better fit */
+  background: #f0f2f5;
+}
+
+.batch-view-header {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.teams-heading {
+  font-size: 24px; /* Font size for the "Teams" heading */
+  margin-bottom: 30px; /* Margin below the heading */
+  text-align: center;
+  color: #053c77; /* Color of the heading */
+  text-transform: uppercase; /* Optional: make the text uppercase */
+}
+
+.batch-view-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.batch-view-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.batch-view-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.batch-view-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.batch-view-image {
+  margin-bottom: 20px;
+}
+
+.batch-view-image img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10%;
+  border: 2px solid #ddd;
+}
+
+.batch-view-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.batch-view-details h3 {
+  margin: 10px 0;
+  font-size: 22px;
+  color: #053c77;
+  text-align: center;
+}
+
+.batch-view-details p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .batch-view-card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .batch-view-card {
+    flex-direction: column;
+  }
+}

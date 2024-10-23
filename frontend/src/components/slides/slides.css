@@ -1,0 +1,144 @@
+.headingg {
+  text-align: center;
+  margin-bottom: 0px;
+  background-color: white;
+  width: 100%;
+  color: #121212;
+  height: 100%;
+  margin-top: 0%;
+}
+
+.headingg::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: #3b82f6;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.containerr {
+  width: 100%;
+  max-width: 1300px;
+  height: 500px;
+  display: flex;
+  justify-content: space-between; 
+  margin: 0 auto;
+  padding: 20px; 
+  background-color: white;
+  overflow: hidden;
+}
+
+.left-side {
+  height: 100%;
+  width: 65%;
+}
+
+.right-side {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.text-contentt {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  color: rgb(43, 38, 38);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.slick-slider, .slick-list, .slick-track {
+  height: 100%;
+}
+
+.cardd {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: color 0.3s ease;
+  display: flex !important;
+  flex-direction: column;
+}
+
+.cardd img {
+  flex-grow: 1;
+  object-fit: cover;
+  width: 100%;
+  height: 70%;
+}
+
+.cardd-body {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.cardd h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.date {
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+
+.slick-dots {
+  bottom: -30px;
+}
+
+.text-contentt:hover {
+  color: #007bff;
+}
+
+.text-contentt:hover .card-body {
+  color: #007bff;
+}
+
+.slick-slide {
+  visibility: hidden;
+}
+
+.slick-slide.slick-active {
+  visibility: visible;
+}
+
+@media (max-width: 768px) {
+  .containerr {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+  }
+
+  .left-side {
+    height: 300px;
+  }
+
+  .right-side {
+    margin-top: 20px;
+  }
+
+  .slick-slider {
+    order: -1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .slick-slider {
+    width: 100%;
+  }
+}

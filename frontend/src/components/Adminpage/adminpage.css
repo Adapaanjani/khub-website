@@ -1,0 +1,89 @@
+.adminpage-container {
+  padding: 20px;
+  padding-top: 100px; /* Adjust this value to move the cards lower */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adminpage-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px; /* Adjust the max-width as needed */
+  margin-top: 20px; /* Adjust this value to move the cards lower */
+  justify-content: center; /* Center the cards */
+}
+
+.adminpage-card {
+  background: linear-gradient(to bottom, #87cefa, #ffffff); /* Card background color changed to white */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 50px;
+  text-align: center;
+  width: calc(25% - 20px); /* 4 cards per row with gap */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #000; /* Text color changed to black */
+  position: relative; /* For the ribbon */
+}
+
+.adminpage-card i {
+  font-size: 24px; /* Icon size */
+  margin-bottom: 10px;
+  color: #000; /* Icon color changed to black */
+}
+
+.adminpage-card h3 {
+  font-size: 18px; /* Title font size */
+  color: #000; /* Title color changed to black */
+  margin: 0;
+}
+
+/* Ribbon Style */
+.ribbon {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 165px;
+  padding: 10px 0;
+  background-color: #000080; /* Ribbon color changed to navy blue */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  color: #fff; /* Ribbon text color changed to white */
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  text-align: center;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  right: -50px;
+  top: 20px;
+  font-size: 12px;
+}
+
+@media (max-width: 1200px) {
+  .adminpage-card {
+    width: calc(33.33% - 20px); /* 3 cards per row with gap */
+  }
+}
+
+@media (max-width: 900px) {
+  .adminpage-card {
+    width: calc(50% - 20px); /* 2 cards per row with gap */
+  }
+}
+
+@media (max-width: 600px) {
+  .adminpage-card {
+    width: 100%; /* 1 card per row */
+  }
+}
